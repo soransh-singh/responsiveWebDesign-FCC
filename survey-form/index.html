@@ -6,6 +6,56 @@
     <title>Survey Form</title>
   </head>
   <body>
+    <h1 id="title">How I Met Your Mother</h1>
+    <p id="description">How I Met Your Mother is an American sitcom,
+      created by Craig Thomas and Carter Bays for CBS. The series,
+      which ran from 2005 to 2014, follows the main character,
+      Ted Mosby, and his group of friends in New York City's Manhattan</p>
+    <form id="survey-form" validate>
+      <div>
+        <label for="name" id="name-label">name:</label>
+        <input type="text" name="name" id="name" placeholder="name" required>
+      </div>
 
+      <div class="">
+        <label for="email" id="email-label">email:</label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+      </div>
+
+      <div class="">
+        <label for="number" id="number-label">Rank The show from 1 to 10</label>
+        <input type="number" min="1" max="10" id="number" name="number" placeholder="rating" value="" required>
+      </div>
+
+      <div class="">
+        <p>Which one would you choose?</p>
+        <label for="brocode">The Bro Code</label>
+        <input type="radio" name="radio" value="brocode">
+        <label for="playbook">Playbook</label>
+        <input type="radio" name="radio" value="playbook">
+      </div>
+
+      <div class="">
+        Your favourite catch phase/s
+        <input type="checkbox" name="one" value="boat"><label for="one">Have you made ted?</label>
+        <input type="checkbox" name="second" value="car"><label for="second">Son of a bitch</label>
+        <input type="checkbox" name="third" value="bike"><label for="third">Legen-wait for it-dary</label>
+      </div>
+
+      <div class="">
+        <label for="favourite" id="favourite-label">favourite character</label>
+        <select class="" name="favourite" id="dropdown">
+          <option value="ted">Ted Mosby</option>
+          <option value="barney">Barney Stinson</option>
+          <option value="marshal">Marshal Erikson</option>
+        </select>
+      </div>
+      <div class="">
+        <p>Your Views about the ending</p>
+        <textarea name="comment" rows="8" cols="40"></textarea>
+      </div>
+      <button type="submit" name="submit" id="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
