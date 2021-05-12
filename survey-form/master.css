@@ -1,0 +1,114 @@
+/*
+216, 100, 4 //darkblue font
+211, 100, 12 // blue
+209, 100, 20 //light blue
+hsla(54, 99%, 49%, 1) //yellow palltone
+50, 100, 52 //yellow
+
+//fonts
+font-family: 'Permanent Marker', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;700&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: hsla(54, 99%, 49%, 1);
+  color: hsl(216, 100, 4);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+#title{
+  font-family: 'Permanent Marker', cursive;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+}
+
+#description{
+  color: hsl(211, 100%, 12);
+  font-weight: 700;
+}
+
+main{
+  width: calc(100% - 2rem);
+  min-height: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+main>*{
+  width: 100%;
+}
+
+#survey-form{
+  background: white;
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border: solid 5px hsl(216, 100%, 4%);
+  box-shadow: 0 0 0 10px hsl(211, 100%, 12%);
+  border-radius: 5px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+#survey-form>div{
+ margin-top: 1rem;
+}
+
+#submit{
+  max-width: 300px;
+  padding: .75rem 1.5rem;
+  background-color: hsl(211, 100%, 12%);
+  color: hsl(50, 100%, 52%);
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  box-shadow: 2px 4px 6px hsla(54, 99%, 49%, 1);
+}
+
+#submit:hover{
+  background-color: hsl(209, 100%, 20%);
+  color: hsl(50, 100%, 52%);
+  box-shadow: none;
+}
+
+textarea{
+  width: min(360px, 80%);
+}
+
+@media(min-width: 450px){
+  #title{
+    font-weight: lighter;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+  }
+  main{
+    width: min(1200px, 80%);
+  }
+}
+
+@media (min-width:1000px) {
+  main{
+    flex-direction: row;
+  }
+  .header{
+    padding-right: 2rem;
+  }
+}

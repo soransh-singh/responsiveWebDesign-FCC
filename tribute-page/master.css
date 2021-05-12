@@ -24,12 +24,11 @@ header{
 }
 
 #title{
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 0;
   padding-bottom: 0;
-
 }
 
 header p{
@@ -77,18 +76,14 @@ hr{
 }
 
 #tribute-info{
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
-
 }
 
 #tribute-info p{
   font-size: 1.25rem;
 }
 
-.inspiration{
-
-}
 
 .footer{
   width: 80%;
@@ -96,9 +91,19 @@ hr{
   text-align: center;
 }
 
+@media (min-width: 450px) {
+  #title{
+    font-size: 2.25rem;
+  }
+}
+
 @media (min-width:700px) {
   .sec-display{
     display: flex;
     flex-direction: row;
+  }
+  #tribute-info{
+    width: 60%;
+    margin: 0 auto;
   }
 }
