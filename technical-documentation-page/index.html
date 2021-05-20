@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./master.css">
+    <title>CSS Grid || Documentation Page</title>
+  </head>
+  <body>
+    <div class="display">
+      <nav id="navbar">
+        <header><h1>CSS Grid Layout Module</h1> </header>
+          <ul>
+            <li><a class="nav-link" href="#intro"> Intro</a> </li>
+            <li><a class="nav-link" href="#grid_template"> Grid Template</a> </li>
+            <li><a class="nav-link" href="#grid_gap"> Grid Gap</a> </li>
+            <li><a class="nav-link" href="#align_items"> Align Items</a> </li>
+            <li><a class="nav-link" href="#justify_content"> Justify Content</a> </li>
+            <li><a class="nav-link" href="#grid_area"> Grid Area</a> </li>
+          </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="intro">
+          <header>
+            <h2>Intro</h2>
+          </header>
+
+          <p>The CSS Grid Layout Module offers a grid-based
+            layout system, with rows and columns,
+            making it easier to design web pages without
+            having to use floats and positioning.
+          </p>
+          <h3>Browser Support:</h3>
+          <p>The grid properties are supported in all modern browsers.</p>
+          <h3>Display property:</h3>
+          <p>An HTML element becomes a grid container
+            when its display property is set to </p>
+          <ul>
+            <li>Grid</li>
+            <li>inline-grid</li>
+            <li>subgrid</li>
+          </ul>
+          <p>All directchildren of the grid container
+           automatically become grid items/children.</p>
+          <code>
+            <p>display: grid;</p>
+          </code>
+        </section>
+
+        <section class="main-section" id="grid_template">
+          <header>
+            <h2>Grid Template</h2>
+          </header>
+          <p>Defines the rows and columns of the grid.</p>
+          <h3>grid-template-columns</h3>
+          <p>The grid-template-columns property defines the number of
+            columns in your grid layout, and it can define the width of each column.
+            The value is a space-separated-list, where each value
+            defines the width of the respective column.</p>
+
+            <h3>grid-template-rows</h3>
+            <p>The grid-template-rows property defines the height of each row.</p>
+          <code>
+            <p>grid-template-columns: 12px 12px 12px;</p>
+            <p>grid-template-rows: 12px 12px 12px;</p>
+          </code>
+          <code>
+            <p>grid-template-columns: repeat(3, 12px);</p>
+            <p>grid-template-rows: repeat(3, auto);</p>
+          </code>
+          <code>
+            <p>grid-template-columns: 22% 22% auto;</p>
+            <p>grid-template-rows: 22% auto 22%;</p>
+          </code>
+        </section>
+
+        <section class="main-section" id="grid_gap">
+          <header>
+            <h2>Grid Gap</h2>
+          </header>
+          <p>Specifies the size of column and row gutters.</p>
+          <p>You can adjust the gap size by using one of the following properties:</p>
+          <ul>
+            <li>grid-column-gap</li>
+            <li>grid-row-gap</li>
+            <li>grid-gap</li>
+          </ul>
+        </section>
+
+        <section class="main-section" id="align_items">
+          <header>
+            <h2>Align Items</h2>
+          </header>
+          <p>The align-items property is used
+            to vertically align the whole grid inside the container.</p>
+          <p>Note: The grid's total height has to be less than the
+            container's height for the align-content property to have any effect.</p>
+          <code>
+            <p>align-items: center;</p>
+            <p>align-items: start;</p>
+            <p>align-items: end;</p>
+            <p>align-items: stretch; /*(default)*/</p>
+          </code>
+        </section>
+
+        <section class="main-section" id="justify_content">
+          <header>
+            <h2>Justify Content</h2>
+          </header>
+          <p>The align-content property is used
+            to vertically align the whole grid inside the container.</p>
+          <p>Note: The grid's total height has to be less than the
+            container's height for the align-content property to have any effect.</p>
+          <code>
+            <p>justify-content: start;</p>
+            <p>justify-content: end;</p>
+            <p>Justify-content: center;</p>
+            <p>justify-content: stretch;</p>
+            <p>justify-content: space-around;</p>
+            <p>justify-content: space-between;</p>
+            <p>justify-content: space-evenly;</p>
+        </code>
+        </section>
+
+        <section class="main-section" id="grid_area">
+          <header>
+            <h2>Grid Area</h2>
+          </header>
+          <p>The grid-area property specifies a grid item's
+            size and location in a grid layout, and is a
+          shorthand property for the following properties:</p>
+          <ul>
+            <li>grid-row-start</li>
+            <li>grid-column-start</li>
+            <li>grid-row-end</li>
+            <li>grid-column-end</li>
+          </ul>
+          <p>itemname:	Specifies a name for the grid item</p>
+          <code>
+            <p>grid-area: grid-row-start / grid-column-start /
+              grid-row-end / grid-column-end | itemname;</p>
+          </code>
+
+          <h3>Grid-column</h3>
+          <p>Determines an items column-based location within the grid.</p>
+          <code>
+            <p>grid-column: 2 / 3;</p>
+            <p>grid-column: 2 / span 2</p>
+            <p>grid-column-start: 1;</p>
+            <p>grid-column-end: 3;</p>
+          </code>
+          <h3>Grid-row</h3>
+          <p>Determines an items row-based location within the grid.</p>
+          <code>
+            <p>grid-row: 1 / 3;</p>
+            <p>grid-row: 1 / span 3;</p>
+            <p>grid-row-start: 1;</p>
+            <p>grid-row-end: 3;</p>
+          </code>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8"></script>
+  </body>
+</html>
