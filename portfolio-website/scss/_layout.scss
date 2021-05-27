@@ -1,0 +1,43 @@
+#navbar{
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5rem 0;
+  @media screen and (min-width:600px){
+    margin-right: 0;
+  }
+}
+
+#welcome-section{
+  height: max(600px, 100vh);
+  display: grid;
+  place-items:center;
+}
+
+#about{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  &>*{
+    width: 100%;
+  }
+  @media screen and (min-width:600px){
+    flex-direction: row;
+  }
+}
+
+.image-about{
+  width: 80%;
+  border-radius: 50%;
+  border: solid .5rem hsla(348, 85%, 54%, 1);
+  margin: 2rem;
+
+}

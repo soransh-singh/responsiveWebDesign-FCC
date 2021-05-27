@@ -1,0 +1,27 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar{
+  background:  hsla(212, 17%, 33%, 1);
+  color: hsla(49, 93%, 67%, 1);
+}
+
+.nav-link{
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+#welcome-section{
+  font-family: 'Pattaya', sans-serif;
+  background: hsla(213, 96%, 11%, 1);
+  color: hsla(49, 93%, 67%, 1);
+  .heading{
+    font-size: calc(1.5rem + 1vw);
+    letter-spacing: 2px;
+    text-align: center;
+    @media screen and (min-width:600px){
+      font-size: 2.5rem;
+    }
+  }
+}
